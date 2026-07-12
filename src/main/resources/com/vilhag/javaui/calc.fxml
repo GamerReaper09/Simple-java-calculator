@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vilhag.javaui.CalcController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Pane styleClass="resultBox" VBox.vgrow="ALWAYS">
+        <Label fx:id="resultLabel"/>
+    </Pane>
+    <HBox VBox.vgrow="ALWAYS">
+        <Button maxHeight="Infinity" styleClass="extraButton" text="C" prefWidth="90.0" onAction="#fullClear"/>
+        <Button maxHeight="Infinity" styleClass="extraButton" text="±" prefWidth="90.0" onAction="#invert"/>
+        <Button maxHeight="Infinity" styleClass="extraButton" text="√" prefWidth="90.0" onAction="#squareRoot"/>
+        <Button maxHeight="Infinity" styleClass="extraButton" text="⌫" prefWidth="90.0" onAction="#backspace"/>
+    </HBox>
+    <HBox VBox.vgrow="ALWAYS">
+        <Button maxHeight="Infinity" styleClass="numButton" text="7" prefWidth="90.0" onAction="#numberPressed"/>
+        <Button maxHeight="Infinity" styleClass="numButton" text="8" prefWidth="90.0" onAction="#numberPressed"/>
+        <Button maxHeight="Infinity" styleClass="numButton" text="9" prefWidth="90.0" onAction="#numberPressed"/>
+        <Button maxHeight="Infinity" styleClass="extraButton" text="÷" prefWidth="90.0" onAction="#operator"/>
+    </HBox>
+    <HBox VBox.vgrow="ALWAYS">
+        <Button maxHeight="Infinity" styleClass="numButton" text="4" prefWidth="90.0" onAction="#numberPressed"/>
+        <Button maxHeight="Infinity" styleClass="numButton" text="5" prefWidth="90.0" onAction="#numberPressed"/>
+        <Button maxHeight="Infinity" styleClass="numButton" text="6" prefWidth="90.0" onAction="#numberPressed"/>
+        <Button maxHeight="Infinity" styleClass="extraButton" text="×" prefWidth="90.0" onAction="#operator"/>
+    </HBox>
+    <HBox VBox.vgrow="ALWAYS">
+        <Button maxHeight="Infinity" styleClass="numButton" text="1" prefWidth="90.0" onAction="#numberPressed"/>
+        <Button maxHeight="Infinity" styleClass="numButton" text="2" prefWidth="90.0" onAction="#numberPressed"/>
+        <Button maxHeight="Infinity" styleClass="numButton" text="3" prefWidth="90.0" onAction="#numberPressed"/>
+        <Button maxHeight="Infinity" styleClass="extraButton" text="-" prefWidth="90.0" onAction="#operator"/>
+    </HBox>
+    <HBox VBox.vgrow="ALWAYS">
+        <Button maxHeight="Infinity" styleClass="extraButton" text="." prefWidth="90.0" onAction="#numberPressed"/>
+        <Button maxHeight="Infinity" styleClass="numButton" text="0" prefWidth="90.0" onAction="#numberPressed"/>
+        <Button maxHeight="Infinity" styleClass="extraButton" text="=" prefWidth="90.0" onAction="#equals"/>
+        <Button maxHeight="Infinity"  styleClass="extraButton" text="+" prefWidth="90.0" onAction="#operator"/>
+    </HBox>
+
+</VBox>

@@ -1,0 +1,34 @@
+.root {
+    -fx-background-color: #191a1c;
+    -fx-border-color: white;
+}
+.numButton {
+    -fx-background-color: #6d15e1;
+    -fx-text-fill: white;
+}
+.numButton:hover {
+    -fx-background-color: #370b7b;
+}
+.extraButton {
+    -fx-background-color: #323232;
+    -fx-text-fill: #ffffff;
+}
+.extraButton:hover {
+    -fx-background-color: #464646;
+}
+.button {
+    -fx-background-radius:100;
+    -fx-background-insets:2;
+    -fx-font-size:20pt;
+}
+.button:hover {
+    -fx-cursor:hand;
+}
+.resultBox {
+    -fx-background-color: #33353b;
+}
+.resultBox .label {
+    -fx-text-fill: white;
+    -fx-font-size: 15pt;
+}
+
