@@ -13,7 +13,7 @@ public class MainApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader loader = new FXMLLoader(MainApplication.class.getResource("calc.fxml"));
+        FXMLLoader calcLoader = new FXMLLoader(MainApplication.class.getResource("calc.fxml"));
         System.out.println(getParameters().getRaw());
         for (String param : getParameters().getRaw()) {
             if (param.equals("dark")) {
@@ -21,7 +21,7 @@ public class MainApplication extends Application {
                 break;
             }
         }
-        Scene scene = new Scene(loader.load(), 400, 620);
+        Scene scene = new Scene(calcLoader.load(), 400, 620);
         scene.getStylesheets().add(Objects.requireNonNull(MainApplication.class.getResource(isDarkTheme ? "calcDark.css" : "calc.css")).toExternalForm());
         stage.setScene(scene);
         stage.setTitle("Calculator");

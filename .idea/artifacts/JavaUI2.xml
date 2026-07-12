@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="jpackage" name="JavaUI2">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaUI2</output-path>
+    <properties id="jpackage-properties">
+      <options>
+        <option name="version" value="" />
+        <option name="copyright" value="" />
+        <option name="description" value="" />
+        <option name="vendor" value="" />
+        <option name="mainClass" value="com.vilhag.javaui.Launcher" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="JavaUI.jar">
+        <element id="module-output" name="JavaUI" />
+      </element>
+    </root>
+  </artifact>
+</component>
