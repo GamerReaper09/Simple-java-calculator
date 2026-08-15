@@ -5,8 +5,7 @@ This calculator makes it easier to modify numbers without having to delete the w
 You can also run the app in dark mode by adding "dark" as an argument when running.
 
 ## Setup
-* Make sure to have java installed (Made in java 21)
-* Download .jar
-* Open terminal in the directory with the .jar
-* Run with java -jar JavaUI.jar
-* Optionally run dark mode by running java -jar JavaUI.jar dark
+* Download .zip from releases
+* Unzip folder wherever you want the program.
+* Run with the exe
+* Optionally run dark mode by running the Darkmode.bat
